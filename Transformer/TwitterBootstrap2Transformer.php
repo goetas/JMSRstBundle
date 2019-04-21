@@ -71,8 +71,9 @@ class TwitterBootstrap2Transformer implements TransformerInterface
                     // Element was not found because it was removed automatically
                 }
             }
-
+            if ($noteElem)
             $divElem->removeChild($noteElem);
+            if ($noteContentElem)
             $divElem->removeChild($noteContentElem);
         }
     }
